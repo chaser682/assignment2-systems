@@ -82,7 +82,9 @@ def test_flash_backward_pytorch():
 
     q, k, v, do = _make_attn_inputs()
     get_flashattention_autograd_function_pytorch().apply(q, k, v, False).backward(do)
-
+    # print(dq_expected)
+    # print(q.grad)
+    # print(q.grad.shape, dq_expected.shape)
     torch.testing.assert_close(dq_expected, q.grad, rtol=1e-2, atol=1e-2)
     torch.testing.assert_close(dk_expected, k.grad, rtol=1e-2, atol=1e-2)
     torch.testing.assert_close(dv_expected, v.grad, rtol=1e-2, atol=1e-2)
