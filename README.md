@@ -1,4 +1,4 @@
-# CS336 Spring 2025 Assignment 2: Systems
+# CS336 Spring 2025 Assignment 2: Systems (Finished)
 
 For a full description of the assignment, see the assignment handout at
 [cs336_spring2025_assignment2_systems.pdf](./cs336_spring2025_assignment2_systems.pdf)
